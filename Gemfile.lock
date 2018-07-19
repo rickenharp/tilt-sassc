@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tilt-sassc (0.1.0)
+    tilt-sassc (0.1.1)
       sassc (~> 1.12)
       tilt (~> 2.0)
 
