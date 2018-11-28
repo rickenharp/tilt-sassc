@@ -14,7 +14,7 @@ module Tilt
     end
 
     def evaluate(scope, locals, &block)
-      @output ||= @engine.render.gsub('#e5cdb2', '#ff0000')
+      @output ||= @engine.render
     end
 
     def allows_script?
@@ -36,7 +36,7 @@ module Tilt
       options.merge(:filename => eval_file, :line => line, :syntax => :scss)
     end
   end
-  
+
   register Tilt::SassCTemplate, 'sass'
   register Tilt::ScssCTemplate, 'scss'
 end
